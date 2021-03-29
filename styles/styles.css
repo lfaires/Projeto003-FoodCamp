@@ -12,6 +12,10 @@
     font-size: 18px;
 }
 
+.size26 {
+    font-size: 26px;
+}
+
 .size44 {
     font-size: 44px;
 }
@@ -29,39 +33,80 @@
 
 .top {
     width: 414px;
-    height: 62px;
+    height: 92px;
     background:#CF2B2B;
     position: fixed;
     top: 0;
     left: 0;
+    padding: 8px 145px 40px 21px;
 }
 
 .container {
-    margin-top: 62px;
+    margin-top: 92px;
     width: 414px;
     background: #E5E5E5;
-    overflow: hidden;
-    padding-top: 25px;
+    overflow: hidden; 
+    padding-left: 11px; 
 }
 
 .container > div {
     display: flex;
+    flex-direction: column;
+   
+}
+
+.orders {
+    margin-top: 31px;
+}
+
+.orders-top {
+    margin-left: 8px;
+    font-size: 26px;
+    font-family: Righteous;
+    color: #333;
+}
+
+.orders-body {
+    display: flex;
     justify-content: space-between;
     align-items: center;
 }
+
+.container .orders:last-child {
+    margin-bottom: 16px;
+}
+
 .order {
     width: 172px;
     height: 216px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    padding: 18px 14px 111px 14px;
+    margin: 17px 8px 0px 8px;
     border-radius: 9px;
     background: #FFFFFF;
+    font-family: roboto;
 }
 
 img {
     width: 144px;
     height: 87px;
     border-radius: 3px;
+}
+
+.bottom {
+    width: 414px;
+    height: 92px;
+    bottom:0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button {
+    font-size: 20px;
+    width: 364px;
+    height: 61px;
+    border-radius: 50px;
+    background: #CBCBCB;
+
 }
