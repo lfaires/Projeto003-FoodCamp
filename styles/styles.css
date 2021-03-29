@@ -17,7 +17,13 @@
 }
 
 /*----------------- TOP------------------*/
-.top-text {
+.heading {
+    font-family: Righteous;
+    color: #FFFFFF;
+}
+
+.subheading {
+    font-family: Roboto;
     color: #FFFFFF;
 }
 
