@@ -1,0 +1,61 @@
+/*------------ CORES E FONTES ------------*/
+
+.size15 {
+    font-size: 14px;
+}
+
+.size16 {
+    font-size: 16px;
+}
+
+.size18 {
+    font-size: 18px;
+}
+
+.size44 {
+    font-size: 44px;
+}
+
+/*----------------- TOP------------------*/
+.top-text {
+    color: #FFFFFF;
+}
+
+.top {
+    width: 414px;
+    height: 62px;
+    background:#CF2B2B;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.container {
+    margin-top: 62px;
+    width: 414px;
+    background: #E5E5E5;
+    overflow: hidden;
+    padding-top: 25px;
+}
+
+.container > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.order {
+    width: 172px;
+    height: 216px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    background: #FFFFFF;
+}
+
+img {
+    width: 144px;
+    height: 87px;
+    border-radius: 3px;
+}
