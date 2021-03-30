@@ -83,7 +83,29 @@
     margin: 17px 8px 0px 8px;
     border-radius: 9px;
     background: #FFFFFF;
-    font-family: roboto;
+    font-family: Roboto;
+    border: 4px solid #32B72F;
+}
+
+.order :first-child {
+    margin-top: 4px;
+    margin-bottom:4px;
+}
+
+.order :nth-child(2) {
+  
+}
+
+.order :last-child {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ion-icon {
+    font-size: 16px;
+    color: #32B72F;
 }
 
 img {
