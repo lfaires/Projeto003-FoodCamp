@@ -36,16 +36,18 @@
     height: 92px;
     background:#CF2B2B;
     position: fixed;
+    z-index: 2;
     top: 0;
     left: 0;
     padding: 8px 145px 40px 21px;
+    box-shadow: #333;
 }
 
 .container {
-    margin-top: 92px;
+    margin: 92px 0;
     width: 414px;
     background: #E5E5E5;
-    overflow: hidden; 
+    overflow-x: scroll; 
     padding-left: 11px; 
 }
 
@@ -117,6 +119,7 @@ img {
 .bottom {
     width: 414px;
     height: 92px;
+    position: fixed;
     bottom:0;
     left: 0;
     display: flex;
@@ -130,5 +133,5 @@ button {
     height: 61px;
     border-radius: 50px;
     background: #CBCBCB;
-
-}
+    border: none;
+ }
