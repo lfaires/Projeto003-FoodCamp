@@ -21,6 +21,10 @@
 }
 
 /*----------------- TOP------------------*/
+body {
+    background: #E5E5E5;
+}
+
 .heading {
     font-family: Righteous;
     color: #FFFFFF;
@@ -40,14 +44,14 @@
     top: 0;
     left: 0;
     padding: 8px 145px 40px 21px;
-    box-shadow: #333;
+    
 }
 
 .container {
-    margin: 92px 0;
+   margin-top: 123px;
+   margin-bottom: 108px;
     width: 414px;
     background: #E5E5E5;
-    overflow-x: scroll; 
     padding-left: 11px; 
 }
 
@@ -59,6 +63,7 @@
 
 .orders {
     margin-top: 31px;
+    
 }
 
 .orders-top {
@@ -72,6 +77,13 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.dessert, .beverage, .food {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
 }
 
 .container .orders:last-child {
@@ -117,6 +129,7 @@ img {
 }
 
 .bottom {
+    background: #FFFFFF;
     width: 414px;
     height: 92px;
     position: fixed;
