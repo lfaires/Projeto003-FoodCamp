@@ -53,8 +53,7 @@ body {
     width: 414px;
     background: #E5E5E5;
     padding-left: 11px; 
-    
-}
+ }
 
 .container > div {
     display: flex;
@@ -85,6 +84,9 @@ body {
     justify-content: space-between;
     align-items: center;
     overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    
 }
 
 .container .orders:last-child {
@@ -105,10 +107,6 @@ body {
 .order :first-child {
     margin-top: 4px;
     margin-bottom:4px;
-}
-
-.order :nth-child(2) {
-  
 }
 
 .order :last-child {
@@ -149,3 +147,9 @@ button {
     background: #CBCBCB;
     border: none;
  }
+
+ /*-------HIDE SCROLLBAR--------*/
+.food::-webkit-scrollbar, .beverage::-webkit-scrollbar, .dessert::-webkit-scrollbar {
+    display: none;
+}
+
