@@ -33,6 +33,7 @@ body {
 .subheading {
     font-family: Roboto;
     color: #FFFFFF;
+  
 }
 
 .top {
@@ -140,11 +141,57 @@ img {
 
 button {
     font-size: 20px;
-    width: 364px;
+    width: calc(100vw - 12%);
     height: 61px;
     border-radius: 50px;
     background: #CBCBCB;
     border: none;
+}
+
+.blank {
+  
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(255,255,255,0.9);
+    z-index: 3;
+}
+
+.confirmation {
+    margin: 32.75vh 4.5vw;
+    background: #50D074;
+    color: #FFFFFF;
+    font-size: 22px;
+    width: 91vw;
+    height: 45vh;
+    position: fixed;
+    z-index: 5;
+    border-radius: 9px;
+    font-family: Roboto;
+}
+
+.confirmation > div, .confirm {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    margin: 13px 22px 13px 22px;
+}
+
+
+
+.confirmation :first-child, .confirmation :last-child {
+    justify-content: center;
+}
+
+.confirm{
+    background: #FFFFFF;
+    color: #50D074;
+    width: 80.4vw;
+    height: 5vh;
+
 }
 
  /*-------HIDE SCROLLBAR--------*/
