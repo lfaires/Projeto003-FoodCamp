@@ -56,15 +56,10 @@ body {
     padding-left: 11px; 
  }
 
-.container > div {
-    display: flex;
-    flex-direction: column;
-   
-}
-
 .orders {
     padding-top: 31px;
-    
+    display: flex;
+    flex-direction: column; 
 }
 
 .orders-top {
@@ -80,7 +75,7 @@ body {
     align-items: center;
 }
 
-.dessert, .beverage, .food {
+ul {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -94,7 +89,7 @@ body {
     margin-bottom: 16px;
 }
 
-.order {
+.order-food, .order-beverage, .order-dessert {
     width: 172px;
     height: 216px;
     padding: 18px 14px 111px 14px;
@@ -104,13 +99,12 @@ body {
     font-family: Roboto;
   }
 
-.order :first-child {
+.order-food :first-child, .order-beverage :first-child, .order-dessert :first-child {
     margin-top: 4px;
     margin-bottom:4px;
 }
 
-.order :last-child {
-
+.order-food :last-child, .order-beverage :last-child, .order-dessert :last-child {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -149,7 +143,6 @@ button {
 }
 
 .blank {
-  
     width: 100vw;
     height: 100vh;
     position: fixed;
@@ -192,6 +185,10 @@ button {
     width: 80.4vw;
     height: 5vh;
 
+}
+
+.hide {
+    display: none;
 }
 
  /*-------HIDE SCROLLBAR--------*/

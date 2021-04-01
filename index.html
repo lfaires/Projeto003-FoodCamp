@@ -12,7 +12,7 @@
     <title>FoodCamp</title>
 </head>
 <body>
-    <div class="blank">
+    <div class="blank hide">
         <div class="confirmation">
             <div><strong>Confirme seu pedido</strong></div>
             <div>
@@ -43,8 +43,8 @@
                 <p>Primeiro, seu prato</p>
             </div>
             <div class="orders-body">
-                <div class="food">
-                    <div class="order">   
+                <ul>
+                    <li class="order-food">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
@@ -59,9 +59,9 @@
                         <p class="size16"> <strong>R$ 14,00</strong></p>
                         <ion-icon name="checkmark-circle"></ion-icon>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="order">   
+                    <li class="order-food">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
@@ -76,9 +76,9 @@
                         <p class="size16"> <strong>R$ 64,99</strong></p>
                         <ion-icon name="checkmark-circle"></ion-icon>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="order">   
+                    <li class="order-food">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
@@ -93,18 +93,19 @@
                         <p class="size16"> <strong>R$ 19,00</strong></p>
                         <ion-icon name="checkmark-circle"></ion-icon>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>    
             </div>
         </div>
+        
 
         <div class="orders">
             <div class="orders-top">
                 <p>Agora, sua bebida</p>
             </div>
             <div class="orders-body">
-                <div class="beverage">
-                    <div class="order">   
+                <ul>
+                    <li class="order-beverage">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
@@ -119,9 +120,9 @@
                         <p class="size16"> <strong>R$ 4,90</strong></p>
                         <ion-icon name="checkmark-circle"></ion-icon>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="order">   
+                    <li class="order-beverage">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
@@ -136,9 +137,9 @@
                         <p class="size16"> <strong>R$ 10,00</strong></p>
                         <ion-icon name="checkmark-circle"></ion-icon>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="order">   
+                    <li class="order-beverage">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
@@ -153,8 +154,8 @@
                         <p class="size16"> <strong>R$ 6,00</strong></p>
                         <ion-icon name="checkmark-circle"></ion-icon>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>    
             </div>
         </div>
 
@@ -163,8 +164,8 @@
                 <p>Por fim, sua sobremesa</p>
             </div>
             <div class="orders-body">
-               <div class="dessert">
-                    <div class="order" onclick="changeColor()">   
+               <ul>
+                    <li class="order-dessert" onclick="changeColor()">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
@@ -179,9 +180,9 @@
                         <p class="size16"> <strong>R$ 7,90</strong></p>
                         <ion-icon id="check" name="checkmark-circle"></ion-icon>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="order" onclick="changeColor()">   
+                    <li class="order-dessert" onclick="changeColor()">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
@@ -196,9 +197,9 @@
                         <p class="size16"> <strong>R$ 10,00</strong></p>
                         <ion-icon id="check" name="checkmark-circle"></ion-icon>
                         </div>
-                    </div>
+                    </li>
 
-                    <div class="order" onclick="changeColor()">   
+                    <li class="order-dessert" onclick="changeColor()">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
@@ -213,8 +214,8 @@
                         <p class="size16"> <strong>R$ 12,00</strong></p>
                         <ion-icon id="check" name="checkmark-circle"></ion-icon>
                         </div>
-                    </div>
-                </div>
+                    </li>
+                </ul>    
             </div>
         </div>
     </div>
