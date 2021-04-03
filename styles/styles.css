@@ -129,23 +129,22 @@ img {
 }
 
 button {
+    font-family: roboto;
     font-size: 20px;
+    color: #FFF;
     width: calc(100vw - 12%);
     height: 61px;
     border-radius: 50px;
-    background: #CBCBCB;
     border: none;
+}
+
+.select-item {
+    background: #CBCBCB;
 }
 
 .end-order {
     display: none;
-    font-size: 20px;
-    width: calc(100vw - 12%);
-    height: 61px;
-    border-radius: 50px;
     background: #50D074;
-    border: none;
-    z-index: 2;
 }
 
 .blank {
@@ -179,8 +178,6 @@ button {
     margin: 13px 22px 13px 22px;
 }
 
-
-
 .confirmation :first-child, .confirmation :last-child {
     justify-content: center;
 }
@@ -195,6 +192,10 @@ button {
 
 .hide {
     display: none;
+}
+
+.unhide { 
+    display: block;
 }
 
  /*-------HIDE SCROLLBAR--------*/
