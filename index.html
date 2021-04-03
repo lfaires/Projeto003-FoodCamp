@@ -33,8 +33,8 @@
     </div>
  
     <div class="top">
-        <p class="heading size44">FoodCamp</p>
-        <p class="subheading size18">Sua comida em 6 minutos</p>
+        <p class="heading">FoodCamp</p>
+        <p class="subheading">Sua comida em 6 minutos</p>
     </div>
 
     <div class="container">
@@ -43,55 +43,55 @@
                 <p>Primeiro, seu prato</p>
             </div>
             <div class="orders-body">
-                <ul>
-                    <li class="order-food">   
+                <ul class="order-food">
+                    <li class="chicken" onclick="activeOrderFood('chicken')">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="size16"><strong>Frango Yin Yang</strong></p>
+                        <p class="dishes"><strong>Frango Yin Yang</strong></p>
                         </div>
                         
                         <div>
-                        <p class="size15">Um pouco de batata, um pouco de salada</p>
+                        <p class="description">Um pouco de batata, um pouco de salada</p>
                         </div>
                         
                         <div>
-                        <p class="size16"> <strong>R$ 14,00</strong></p>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <p class="price"> <strong>R$ 14,00</strong></p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
 
-                    <li class="order-food">   
+                    <li class="meat" onclick="activeOrderFood('meat')">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="size16"><strong>Picanha do chef</strong></p>
+                        <p class="dishes"><strong>Picanha do chef</strong></p>
                         </div>
                         
                         <div>
-                        <p class="size15">Suculenta picanha, arroz e vinagrete</p>
+                        <p class="description">Suculenta picanha, arroz e vinagrete</p>
                         </div>
                         
                         <div>
-                        <p class="size16"> <strong>R$ 64,99</strong></p>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <p class="price"> <strong>R$ 64,99</strong></p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
 
-                    <li class="order-food">   
+                    <li class="barbecue" onclick="activeOrderFood('barbecue')">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="size16"><strong>Churrasco misto</strong></p>
+                        <p class="dishes"><strong>Churrasco misto</strong></p>
                         </div>
                         
                         <div>
-                        <p class="size15">Escolha até 5 acompanhamentos</p>
+                        <p class="description">Escolha até 5 acompanhamentos</p>
                         </div>
                         
                         <div>
-                        <p class="size16"> <strong>R$ 19,00</strong></p>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <p class="price"> <strong>R$ 19,00</strong></p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
                 </ul>    
@@ -104,55 +104,55 @@
                 <p>Agora, sua bebida</p>
             </div>
             <div class="orders-body">
-                <ul>
-                    <li class="order-beverage">   
+                <ul  class="order-beverage">
+                    <li class="coke" onclick="activeOrderBeverage('coke')">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="size16"><strong>Coquinha gelada</strong></p>
+                        <p class="dishes"><strong>Coquinha gelada</strong></p>
                         </div>
                         
                         <div>
-                        <p class="size15">Lata 350ml</p>
+                        <p class="description">Lata 350ml</p>
                         </div>
                         
                         <div>
-                        <p class="size16"> <strong>R$ 4,90</strong></p>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <p class="price"> <strong>R$ 4,90</strong></p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
 
-                    <li class="order-beverage">   
+                    <li class="beer" onclick="activeOrderBeverage('beer')">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="size16"><strong>Budweiser</strong></p>
+                        <p class="dishes"><strong>Budweiser</strong></p>
                         </div>
                         
                         <div>
-                        <p class="size15">Longneck 550ml</p>
+                        <p class="description">Longneck 550ml</p>
                         </div>
                         
                         <div>
-                        <p class="size16"> <strong>R$ 10,00</strong></p>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <p class="price"> <strong>R$ 10,00</strong></p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
 
-                    <li class="order-beverage">   
+                    <li class="soda" onclick="activeOrderBeverage('soda')">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="size16"><strong>H2O</strong></p>
+                        <p class="dishes"><strong>H2O</strong></p>
                         </div>
                         
                         <div>
-                        <p class="size15">Garrafa 500ml</p>
+                        <p class="description">Garrafa 500ml</p>
                         </div>
                         
                         <div>
-                        <p class="size16"> <strong>R$ 6,00</strong></p>
-                        <ion-icon name="checkmark-circle"></ion-icon>
+                        <p class="price"> <strong>R$ 6,00</strong></p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
                 </ul>    
@@ -164,55 +164,55 @@
                 <p>Por fim, sua sobremesa</p>
             </div>
             <div class="orders-body">
-               <ul>
-                    <li class="order-dessert" onclick="changeColor()">   
+               <ul  class="order-dessert">
+                    <li class="pudin" onclick="activeOrderDessert('pudin')">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="size16"><strong>Pudim</strong></p>
+                        <p class="dishes"><strong>Pudim</strong></p>
                         </div>
                         
                         <div>
-                        <p class="size15">Apenas pudim</p>
+                        <p class="description">Apenas pudim</p>
                         </div>
                         
                         <div>
-                        <p class="size16"> <strong>R$ 7,90</strong></p>
-                        <ion-icon id="check" name="checkmark-circle"></ion-icon>
+                        <p class="price"> <strong>R$ 7,90</strong></p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
 
-                    <li class="order-dessert" onclick="changeColor()">   
+                    <li class="brownie" onclick="activeOrderDessert('brownie')">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="size16"><strong>Brownie</strong></p>
+                        <p class="dishes"><strong>Brownie</strong></p>
                         </div>
                         
                         <div>
-                        <p class="size15">Apenas brownie</p>
+                        <p class="description">Apenas brownie</p>
                         </div>
                         
                         <div>
-                        <p class="size16"> <strong>R$ 10,00</strong></p>
-                        <ion-icon id="check" name="checkmark-circle"></ion-icon>
+                        <p class="price"> <strong>R$ 10,00</strong></p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
 
-                    <li class="order-dessert" onclick="changeColor()">   
+                    <li class="cake" onclick="activeOrderDessert('cake')">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="size16"><strong>Bolo de pote</strong></p>
+                        <p class="dishes"><strong>Bolo de pote</strong></p>
                         </div>
                         
                         <div>
-                        <p class="size15">Apenas bolo de pote</p>
+                        <p class="description">Apenas bolo de pote</p>
                         </div>
                         
                         <div>
-                        <p class="size16"> <strong>R$ 12,00</strong></p>
-                        <ion-icon id="check" name="checkmark-circle"></ion-icon>
+                        <p class="price"> <strong>R$ 12,00</strong></p>
+                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
                 </ul>    
@@ -222,10 +222,14 @@
 
     <div class="bottom">
         <button class="subheading">Selecione os 3 itens <br>para fechar o pedido</button> 
+        <button class="end-order subheading hide">Fechar pedido</button>
     </div>
+
+    
     
     </div>
-    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script src="scripts.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    
 </body>
 </html>
