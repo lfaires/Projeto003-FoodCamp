@@ -4,13 +4,11 @@ body {
 
 .heading {
     font-family: Righteous;
-    color: #FFFFFF;
     font-size: 44px;
 }
 
 .subheading {
     font-family: Roboto;
-    color: #FFFFFF;
     font-size: 18px;
 }
 
@@ -18,6 +16,7 @@ body {
     width: 100vw;
     height: 92px;
     background:#CF2B2B;
+    color: #FFFFFF;
     position: fixed;
     z-index: 2;
     top: 0;
@@ -83,8 +82,11 @@ li :first-child {
 
 li :last-child {
     display: flex;
-    justify-content: space-between;
     align-items: center;
+}
+
+li > div:last-child {
+    font-weight: bold;
 }
 
 
@@ -94,20 +96,27 @@ li :last-child {
 
 .price, .dishes {
     font-size: 16px;
+    font-weight: bold;
 }
+
 .check {
     font-size: 16px;
     color: #FFF;
 }
 
 .activeli {
-    border: 3px solid #50D074;
+    border: 3px solid #32B72F;
     border-radius: 9px;
 }
 
-.check-activate {
+.check-icon {
+    color: #FFF;
     font-size: 16px;
-    color:#50D074;
+}
+
+.activeicon {
+    font-size: 16px;
+    color:#32B72F;
 }
 
 img {
@@ -131,6 +140,7 @@ img {
 button {
     font-family: roboto;
     font-size: 20px;
+    font-weight: bold;
     color: #FFF;
     width: calc(100vw - 12%);
     height: 61px;
@@ -138,12 +148,22 @@ button {
     border: none;
 }
 
+.confirm{
+    background: #FFFFFF;
+    color: #50D074;
+}
+
+.cancel {
+    background:   #50D074;;
+}
+
 .select-item {
     background: #CBCBCB;
+    font-weight: normal;
 }
 
 .end-order {
-    background: #50D074;
+    background: #32B72F;
 }
 
 .blank {
@@ -157,19 +177,20 @@ button {
 }
 
 .confirmation {
-    margin: 32.75vh 4.5vw;
+    margin: 30vh 4vw;
     background: #50D074;
     color: #FFFFFF;
     font-size: 22px;
-    width: 91vw;
-    height: 45vh;
+    width: 91%;
+    height: 50%;
     position: fixed;
-    z-index: 5;
+    z-index: 4;
     border-radius: 9px;
     font-family: Roboto;
+    
 }
 
-.confirmation > div, .confirm {
+.confirmation > div{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -177,16 +198,8 @@ button {
     margin: 13px 22px 13px 22px;
 }
 
-.confirmation :first-child, .confirmation :last-child {
+.confirmation :first-child {
     justify-content: center;
-}
-
-.confirm{
-    background: #FFFFFF;
-    color: #50D074;
-    width: 80.4vw;
-    height: 5vh;
-
 }
 
 .hide {

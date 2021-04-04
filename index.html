@@ -16,19 +16,19 @@
         <div class="confirmation">
             <div><strong>Confirme seu pedido</strong></div>
             <div>
-                <span>Frango Yin Yang</span><span>R$ 14,90</span>
+                <span class="food"></span><span class="food-price"></span>
             </div>
             <div>
-                <span>Coquinha</span><span>R$ 4,90</span>
+                <span class="beverage"></span><span class="beverage-price"></span>
             </div>
             <div>
-                <span>Pudim</span><span>R$ 7,90</span>
+                <span class="dessert"> </span><span class="dessert-price"></span>
             </div>
             <div>
-                <span><strong>TOTAL</strong></span><span>R$ 27,90</span>
+                <span><strong>TOTAL</strong></span><span class="total"><strong></strong></span>
             </div>
-            <button class="confirm">Tudo certo, pode pedir</button>
-            <div><strong>Cancelar</strong></div>
+            <button class="confirm"> <a href="https://wa.me/5521990624815"> Tudo certo, pode pedir!</a></button>
+            <button class="cancel" onclick="cancelOrder()"><strong>Cancelar</strong></button>
         </div>
     </div>
  
@@ -44,11 +44,11 @@
             </div>
             <div class="orders-body">
                 <ul class="order-food">
-                    <li class="chicken" onclick="activeOrderFood('chicken')">   
+                    <li class="chicken" onclick="activeOrderFood('.chicken')">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="dishes"><strong>Frango Yin Yang</strong></p>
+                        <p class="dishes">Frango Yin Yang</p>
                         </div>
                         
                         <div>
@@ -56,16 +56,16 @@
                         </div>
                         
                         <div>
-                        <p class="price"> <strong>R$ 14,00</strong></p>
-                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                            &#82;&#36;&nbsp;<span class="price"> 14.00</spanp>
+                        <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
 
-                    <li class="meat" onclick="activeOrderFood('meat')">   
+                    <li class="meat" onclick="activeOrderFood('.meat')">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="dishes"><strong>Picanha do chef</strong></p>
+                        <p class="dishes">Picanha do chef</p>
                         </div>
                         
                         <div>
@@ -73,16 +73,16 @@
                         </div>
                         
                         <div>
-                        <p class="price"> <strong>R$ 64,99</strong></p>
-                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                            &#82;&#36;&nbsp;<span class="price"> 64.99</spanp>
+                        <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
 
-                    <li class="barbecue" onclick="activeOrderFood('barbecue')">   
+                    <li class="barbecue" onclick="activeOrderFood('.barbecue')">   
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="dishes"><strong>Churrasco misto</strong></p>
+                        <p class="dishes">Churrasco misto</p>
                         </div>
                         
                         <div>
@@ -90,8 +90,8 @@
                         </div>
                         
                         <div>
-                        <p class="price"> <strong>R$ 19,00</strong></p>
-                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                            &#82;&#36;&nbsp;<span class="price"> 19.00</spanp>
+                        <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
                 </ul>    
@@ -109,7 +109,7 @@
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="dishes"><strong>Coquinha gelada</strong></p>
+                        <p class="dishes">Coquinha gelada</p>
                         </div>
                         
                         <div>
@@ -117,8 +117,8 @@
                         </div>
                         
                         <div>
-                        <p class="price"> <strong>R$ 4,90</strong></p>
-                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                            &#82;&#36;&nbsp;<span class="price"> 4.90</spanp>
+                        <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
 
@@ -126,7 +126,7 @@
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="dishes"><strong>Budweiser</strong></p>
+                        <p class="dishes">Budweiser</p>
                         </div>
                         
                         <div>
@@ -134,8 +134,8 @@
                         </div>
                         
                         <div>
-                        <p class="price"> <strong>R$ 10,00</strong></p>
-                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                            &#82;&#36;&nbsp;<span class="price"> 8.00</spanp>
+                        <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
 
@@ -143,7 +143,7 @@
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="dishes"><strong>H2O</strong></p>
+                        <p class="dishes">H2O</p>
                         </div>
                         
                         <div>
@@ -151,8 +151,8 @@
                         </div>
                         
                         <div>
-                        <p class="price"> <strong>R$ 6,00</strong></p>
-                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                            &#82;&#36;&nbsp;<span class="price"> 6.00</spanp>
+                        <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
                 </ul>    
@@ -169,7 +169,7 @@
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="dishes"><strong>Pudim</strong></p>
+                        <p class="dishes">Pudim</p>
                         </div>
                         
                         <div>
@@ -177,8 +177,8 @@
                         </div>
                         
                         <div>
-                        <p class="price"> <strong>R$ 7,90</strong></p>
-                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                            &#82;&#36;&nbsp;<span class="price"> 7.90</spanp>
+                        <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
 
@@ -186,7 +186,7 @@
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="dishes"><strong>Brownie</strong></p>
+                        <p class="dishes">Brownie</p>
                         </div>
                         
                         <div>
@@ -194,8 +194,8 @@
                         </div>
                         
                         <div>
-                        <p class="price"> <strong>R$ 10,00</strong></p>
-                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                            &#82;&#36;&nbsp;<span class="price"> 10.00</spanp>
+                        <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
 
@@ -203,7 +203,7 @@
                         <img src="images/lala.jpg" alt="">
                         
                         <div>
-                        <p class="dishes"><strong>Bolo de pote</strong></p>
+                        <p class="dishes">Bolo de pote</p>
                         </div>
                         
                         <div>
@@ -211,8 +211,8 @@
                         </div>
                         
                         <div>
-                        <p class="price"> <strong>R$ 12,00</strong></p>
-                        <ion-icon class="check" name="checkmark-circle"></ion-icon>
+                            &#82;&#36;&nbsp;<span class="price"> 12.00</spanp>
+                        <ion-icon class="check-icon" name="checkmark-circle"></ion-icon>
                         </div>
                     </li>
                 </ul>    
@@ -222,7 +222,7 @@
 
     <div class="bottom">
         <button class="select-item">Selecione os 3 itens <br>para fechar o pedido</button> 
-        <button class="end-order hide">Fechar pedido</button>
+        <button class="end-order hide" onclick="confirmOrder()">Fechar pedido</button>
     </div>
 
     
