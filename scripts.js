@@ -4,14 +4,20 @@ let dessert = 0;
 
 function activeOrderFood(classOrder) {
     const active = document.querySelector(".order-food .activeli");
+    const activeicon = document.querySelector(".order-food .activeicon")
 
     if(active !== null){
         active.classList.remove("activeli");
-
+        activeicon.classList.replace("activeicon","checkicon")
     }
 
     const selector = document.querySelector(classOrder);
     selector.classList.toggle("activeli");
+
+    const checkmark = ".order-food " + classOrder + " .checkicon"
+    
+    const selectoricon = document.querySelector(checkmark)
+    selectoricon.classList.replace("checkicon","activeicon")
 
     food = 1;
     count(food, beverage, dessert)
@@ -19,26 +25,42 @@ function activeOrderFood(classOrder) {
 
 function activeOrderBeverage(classOrder) {
     const active = document.querySelector(".order-beverage .activeli");
+    const activeicon = document.querySelector(".order-beverage .activeicon");
         
     if(active !== null){
         active.classList.remove("activeli");
+        activeicon.classList.replace("activeicon","checkicon")
     }
 
-    const selector = document.querySelector("."+ classOrder);
+    const selector = document.querySelector(classOrder);
     selector.classList.add("activeli");
+    
+    const checkmark = ".order-beverage " + classOrder + " .checkicon"
+    
+    const selectoricon = document.querySelector(checkmark)
+    selectoricon.classList.replace("checkicon","activeicon")
+
     beverage = 1;
     count(food, beverage, dessert)
 }
 
 function activeOrderDessert(classOrder) {
     const active = document.querySelector(".order-dessert .activeli");
+    const activeicon = document.querySelector(".order-dessert .activeicon");
     
     if(active !== null){
         active.classList.remove("activeli")
+        activeicon.classList.replace("activeicon","checkicon")
     }
 
-    const selector = document.querySelector("." + classOrder);
+    const selector = document.querySelector(classOrder);
     selector.classList.add("activeli");
+
+    const checkmark = ".order-dessert " + classOrder + " .checkicon"
+    
+    const selectoricon = document.querySelector(checkmark)
+    selectoricon.classList.replace("checkicon","activeicon")
+
     dessert =1;
     count(food, beverage, dessert)
 }

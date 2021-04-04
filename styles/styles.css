@@ -83,25 +83,27 @@ li :first-child {
 li :last-child {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 }
 
-li > div:last-child {
+li :last-child > span {
+    display: flex;
+    
+}
+
+.dishes {
+    font-size: 16px;
     font-weight: bold;
 }
-
 
 .description {
     font-size: 14px;
+    font-weight: lighter;
 }
 
-.price, .dishes {
+.price {
     font-size: 16px;
-    font-weight: bold;
-}
-
-.check {
-    font-size: 16px;
-    color: #FFF;
+    font-weight: normal;
 }
 
 .activeli {
@@ -109,13 +111,15 @@ li > div:last-child {
     border-radius: 9px;
 }
 
-.check-icon {
-    color: #FFF;
+ion-icon {
     font-size: 16px;
 }
 
+.checkicon {
+    color: #FFF;
+}
+
 .activeicon {
-    font-size: 16px;
     color:#32B72F;
 }
 
@@ -151,10 +155,12 @@ button {
 .confirm{
     background: #FFFFFF;
     color: #50D074;
+    height: auto;
 }
 
 .cancel {
-    background:   #50D074;;
+    background:   #50D074;
+    height: auto;
 }
 
 .select-item {
