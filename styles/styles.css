@@ -66,6 +66,9 @@ ul {
 }
 
 li {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 172px;
     height: 216px;
     padding: 18px 14px 111px 12px;
@@ -88,7 +91,7 @@ li :last-child {
 
 li :last-child > span {
     display: flex;
-    
+
 }
 
 .dishes {
