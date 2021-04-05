@@ -74,7 +74,7 @@ function count(countFood, countBeverage, countDessert){
     if (countTotal === 3) {
         const selectButton = document.querySelector(".select-item")
         selectButton.classList.add("hide")
-        const confirmButton = document.querySelector(".end-order")
+        const confirmButton = document.querySelector(".checkout-order")
         confirmButton.classList.replace("hide","unhide")
     }
 }
