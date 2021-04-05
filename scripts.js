@@ -77,22 +77,44 @@ function count(countFood, countBeverage, countDessert){
 
 function confirmOrder(){
     
-    document.querySelector(".food").innerHTML = document.querySelector(".order-food .activeli .dishes").innerHTML;
+    const food = document.querySelector(".order-food .activeli .dishes").innerHTML;
+    const foodPrice = document.querySelector(".order-food .activeli .price").innerHTML;
 
-    document.querySelector(".food-price").innerHTML = "&#82;&#36; " + document.querySelector(".order-food .activeli .price").innerHTML;
+    const beverage = document.querySelector(".order-beverage .activeli .dishes").innerHTML;
+    const beveragePrice = document.querySelector(".beverage-price").innerHTML = document.querySelector(".order-beverage .activeli .price").innerHTML;
 
-    document.querySelector(".beverage").innerHTML = document.querySelector(".order-beverage .activeli .dishes").innerHTML;
+    const dessert = document.querySelector(".order-dessert .activeli .dishes").innerHTML; 
+    const dessertPrice = document.querySelector(".order-dessert .activeli .price").innerHTML;
 
-    document.querySelector(".beverage-price").innerHTML = "&#82;&#36; " + document.querySelector(".order-beverage .activeli .price").innerHTML;
 
-    document.querySelector(".dessert").innerHTML = document.querySelector(".order-dessert .activeli .dishes").innerHTML; 
+    document.querySelector(".food").innerHTML = food;
+    document.querySelector(".food-price").innerHTML = "&#82;&#36; " + foodPrice
+    
+    document.querySelector(".beverage").innerHTML = beverage;
+    document.querySelector(".beverage-price").innerHTML = "&#82;&#36; " + beveragePrice
+    
+    document.querySelector(".dessert").innerHTML = dessert;
+    document.querySelector(".dessert-price").innerHTML = "&#82;&#36; " + dessertPrice
 
-    document.querySelector(".dessert-price").innerHTML = "&#82;&#36; " + document.querySelector(".order-dessert .activeli .price").innerHTML;
+   
+    const total = (parseFloat(foodPrice.replace(",",".")) + parseFloat(beveragePrice.replace(",",".")) + parseFloat(dessertPrice.replace(",","."))).toFixed(2)
 
-    const total = (parseFloat((document.querySelector(".order-food .activeli .price").innerHTML).replace(",",".")) + parseFloat((document.querySelector(".order-beverage .activeli .price").innerHTML).replace(",",".")) + parseFloat((document.querySelector(".order-dessert .activeli .price").innerHTML).replace(",","."))).toFixed(2)
 
     document.querySelector(".total").innerHTML = ("&#82;&#36; " + total).replace(".",",")
     
+    
+    const stringFood = "- Prato: " + food
+    const stringBeverage = "- Bebida: " + beverage
+    const stringDessert = "- Sobremesa: " + dessert
+    const stringTotal = "Total: R$ " + total.replace(".",",")
+    
+    const stringMessage = "Olá, gostaria de fazer o pedido: " + stringFood + "&nbsp;" + stringBeverage + "&nbsp;" + stringDessert + "&nbsp;" + stringTotal
+
+    const msgWhtsapp = encodeURIComponent(stringMessage)
+    const linkWtsapp = "https://wa.me/5521990624815?text=" + msgWhtsapp
+
+    document.querySelector(".message").setAttribute("href",linkWtsapp)
+
     const blank = document.querySelector(".blank")
     blank.classList.replace("hide", "unhide")
 }
