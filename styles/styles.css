@@ -25,6 +25,10 @@ body {
     box-shadow: 0px 3px 2px grey;
 }
 
+.total {
+    font-weight: bold;
+}
+
 .container {
    margin-top: 92px;
    margin-bottom: 108px;
@@ -158,12 +162,15 @@ button {
 .confirm{
     background: #FFFFFF;
     color: #50D074;
-    height: auto;
+    height: 65%;
+    width: calc(100vw - 20%);
 }
 
 .cancel {
     background:   #50D074;
-    height: auto;
+    height: 35%;
+    width: calc(100vw - 20%);
+    padding: 10px 0;
 }
 
 .select-item {
@@ -186,12 +193,16 @@ button {
 }
 
 .confirmation {
-    margin: 30vh 4vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 25vh 4vw;
+    padding: 10px 0;
     background: #50D074;
     color: #FFFFFF;
     font-size: 22px;
     width: 91%;
-    height: 50%;
+    height: 65%;
     position: fixed;
     z-index: 4;
     border-radius: 9px;
@@ -204,11 +215,15 @@ button {
     align-items: center;
     justify-content: space-between;
     margin-bottom: 10px;
-    margin: 13px 22px 13px 22px;
+    margin: 13px 15px 13px 15px;
 }
 
 .confirmation :first-child {
     justify-content: center;
+}
+
+.confirmation :last-child {
+    flex-direction: column;  
 }
 
 .hide {
