@@ -89,9 +89,9 @@ function confirmOrder(){
 
     document.querySelector(".dessert-price").innerHTML = "&#82;&#36; " + document.querySelector(".order-dessert .activeli .price").innerHTML;
 
-    const total = (parseFloat(document.querySelector(".order-food .activeli .price").innerHTML) + parseFloat(document.querySelector(".order-beverage .activeli .price").innerHTML) + parseFloat(document.querySelector(".order-dessert .activeli .price").innerHTML)).toFixed(2)
+    const total = (parseFloat((document.querySelector(".order-food .activeli .price").innerHTML).replace(",",".")) + parseFloat((document.querySelector(".order-beverage .activeli .price").innerHTML).replace(",",".")) + parseFloat((document.querySelector(".order-dessert .activeli .price").innerHTML).replace(",","."))).toFixed(2)
 
-    document.querySelector(".total").innerHTML = "&#82;&#36; " + total
+    document.querySelector(".total").innerHTML = ("&#82;&#36; " + total).replace(".",",")
     
     const blank = document.querySelector(".blank")
     blank.classList.replace("hide", "unhide")
