@@ -23,6 +23,7 @@ function activeOrderFood(classOrder) {
     count(food, beverage, dessert)
 }
 
+
 function activeOrderBeverage(classOrder) {
     const active = document.querySelector(".order-beverage .activeli");
     const activeicon = document.querySelector(".order-beverage .activeicon");
@@ -43,6 +44,7 @@ function activeOrderBeverage(classOrder) {
     beverage = 1;
     count(food, beverage, dessert)
 }
+
 
 function activeOrderDessert(classOrder) {
     const active = document.querySelector(".order-dessert .activeli");
@@ -65,15 +67,18 @@ function activeOrderDessert(classOrder) {
     count(food, beverage, dessert)
 }
 
+
 function count(countFood, countBeverage, countDessert){
     const countTotal = countFood + countBeverage + countDessert;
+    
     if (countTotal === 3) {
-    const selectButton = document.querySelector(".select-item")
-    selectButton.classList.add("hide")
-    const confirmButton = document.querySelector(".end-order")
-    confirmButton.classList.replace("hide","unhide")
+        const selectButton = document.querySelector(".select-item")
+        selectButton.classList.add("hide")
+        const confirmButton = document.querySelector(".end-order")
+        confirmButton.classList.replace("hide","unhide")
+    }
 }
-}
+
 
 function confirmOrder(){
     
@@ -120,6 +125,7 @@ function confirmOrder(){
     const blank = document.querySelector(".blank")
     blank.classList.replace("hide", "unhide")
 }
+
 
 function cancelOrder(){
     const blank = document.querySelector(".blank")

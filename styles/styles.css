@@ -2,16 +2,6 @@ body {
     background: #E5E5E5;
 }
 
-.heading {
-    font-family: Righteous;
-    font-size: 44px;
-}
-
-.subheading {
-    font-family: Roboto;
-    font-size: 18px;
-}
-
 .top {
     width: 100vw;
     height: 92px;
@@ -25,17 +15,23 @@ body {
     box-shadow: 0px 5px 15px grey;
 }
 
-.total {
-    font-weight: bold;
+.heading {
+    font-family: Righteous;
+    font-size: 44px;
+}
+
+.subheading {
+    font-family: Roboto;
+    font-size: 18px;
 }
 
 .container {
-   margin-top: 92px;
-   margin-bottom: 108px;
+    margin-top: 92px;
+    margin-bottom: 108px;
     width: 100vw;
     background: #E5E5E5;
     padding-left: 11px; 
- }
+}
 
 .orders {
     padding-top: 31px;
@@ -65,10 +61,6 @@ ul {
     scrollbar-width: none;  
 }
 
-.container .orders:last-child {
-    margin-bottom: 16px;
-}
-
 li {
     display: flex;
     flex-direction: column;
@@ -95,7 +87,12 @@ li :last-child {
 
 li :last-child > span {
     display: flex;
+}
 
+img {
+    width: 144px;
+    height: 87px;
+    border-radius: 3px;
 }
 
 .dishes {
@@ -113,27 +110,12 @@ li :last-child > span {
     font-weight: normal;
 }
 
-.activeli {
-    border: 3px solid #32B72F;
-    border-radius: 9px;
-}
-
 ion-icon {
     font-size: 16px;
 }
 
 .checkicon {
     color: #FFF;
-}
-
-.activeicon {
-    color:#32B72F;
-}
-
-img {
-    width: 144px;
-    height: 87px;
-    border-radius: 3px;
 }
 
 .bottom {
@@ -160,14 +142,14 @@ button {
 }
 
 .confirm{
-    background: #FFFFFF;
+    background:#FFFFFF;
     color: #50D074;
     height: 65%;
     width: calc(100vw - 20%);
 }
 
 .cancel {
-    background:   #50D074;
+    background:#50D074;
     height: 35%;
     width: calc(100vw - 20%);
     padding: 10px 0;
@@ -178,8 +160,12 @@ button {
     font-weight: normal;
 }
 
-.end-order {
+.checkout-order {
     background: #32B72F;
+}
+
+.container .orders:last-child {
+    margin-bottom: 16px;
 }
 
 .blank {
@@ -206,8 +192,7 @@ button {
     position: fixed;
     z-index: 4;
     border-radius: 9px;
-    font-family: Roboto;
-    
+    font-family: roboto;
 }
 
 .confirmation > div{
@@ -226,12 +211,25 @@ button {
     flex-direction: column;  
 }
 
+.total {
+    font-weight: bold;
+}
+
 .hide {
     display: none;
 }
 
 .unhide { 
     display: block;
+}
+
+.activeli {
+    border: 3px solid #32B72F;
+    border-radius: 9px;
+}
+
+.activeicon {
+    color:#32B72F;
 }
 
  /*-------HIDE SCROLLBAR--------*/
