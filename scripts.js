@@ -102,13 +102,15 @@ function confirmOrder(){
 
     document.querySelector(".total").innerHTML = ("&#82;&#36; " + total).replace(".",",")
     
+    const name = prompt("Qual o seu nome?");
+    const address = prompt("Qual seu endereço?")
     
-    const stringFood = "- Prato: " + food
-    const stringBeverage = "- Bebida: " + beverage
-    const stringDessert = "- Sobremesa: " + dessert
-    const stringTotal = "Total: R$ " + total.replace(".",",")
+    const stringFood = "- *Prato*: " + food
+    const stringBeverage = "- *Bebida*: " + beverage
+    const stringDessert = "- *Sobremesa*: " + dessert
+    const stringTotal = "*Total*: R$ " + total.replace(".",",")
     
-    const stringMessage = "Olá, gostaria de fazer o pedido: " + stringFood + "&nbsp;" + stringBeverage + "&nbsp;" + stringDessert + "&nbsp;" + stringTotal
+    const stringMessage = "Olá, gostaria de fazer o *pedido*: " + "\n" + stringFood + "\n" + stringBeverage + "\n" + stringDessert + "\n" + stringTotal + "\n" + "\n" + "Nome: " + name + "\n" + "Endereço: " + address
 
     const msgWhtsapp = encodeURIComponent(stringMessage)
     const linkWtsapp = "https://wa.me/5521990624815?text=" + msgWhtsapp
